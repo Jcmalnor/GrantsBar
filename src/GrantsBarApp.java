@@ -12,6 +12,7 @@ public class GrantsBarApp {
 		//print receipt
 		//Again?
 		
+		System.out.println("hello");
 	}
 
 }
