@@ -3,18 +3,19 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class GrantsBarApp {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		Scanner stringscan = new Scanner(System.in);
 		// introduction
 		System.out.println("Hello and welcome to Grant's Bar!\n");
 		// read and print menu
 		File file = new File("Menu");
-		String orderComplete = "n";
+		String newOrder = "n";
+		TakeOrder order = new TakeOrder();
+		double total1 = 0;
+		double total2 = 0;
+		
 		try {
 			FileReader fr = new FileReader(file);
 			BufferedReader br = new BufferedReader(fr);
@@ -28,25 +29,27 @@ public class GrantsBarApp {
 		} catch (IOException e) {
 			System.out.println(e);
 		}
-		while (orderComplete.equalsIgnoreCase("n")) {
-			System.out.print("What drink would you like? (enter: 1-12) ");
-			int orderNumber = sc.nextInt();
+		
+		while (newOrder.equalsIgnoreCase("n")) {
 			
-			System.out.print("How many? ");
-			int orderQuantity = sc.nextInt();
-			
-			System.out.print("Does that complete your order? (Y/N) ");
-			orderComplete = stringscan.nextLine();
-			if (orderComplete.equalsIgnoreCase("y")) {
+			// call take order
+			newOrder = order.getTakeOrder();
+			// calculate total
+			total2 = order.getTotal();
+	
+			if (newOrder.equalsIgnoreCase("y")) {
+				total1 += total2;
 				break;
 			} else {
 				continue;
 			}	
 			}
-		
-			// call take order
-			// calculate total
-
+			total1 = order.getTax();
+			System.out.println("Your total after tax is $" + total1);
+			
+			total1 = order.getTip();
+			System.out.println(total1);
+			
 			// call checkout
 			// payment method
 
