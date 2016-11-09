@@ -3,6 +3,7 @@ public class Alcohol {
 
 	private String drinkName = null;
 	private String price = null;
+	private int amount = 0;
 	private String category = null;
 	private String description = null;
 	
@@ -46,49 +47,49 @@ public class Alcohol {
 	}
 
 	// Getters
-//	public String getPrice(int x) {
-//		switch (x) {
-//		case 1:
-//			price = "5";
-//			return price;
-//		case 2:
-//			price = "5";
-//			return price;
-//		case 3:
-//			price = "7";
-//			return price;
-//		case 4:
-//			price = "6";
-//			return price;
-//		case 5:
-//			price = "5";
-//			return price;
-//		case 6:
-//			price = "5";
-//			return price;
-//		case 7:
-//			price = "6";
-//			return price;
-//		case 8:
-//			price = "7";
-//			return price;
-//		case 9:
-//			price = "7";
-//			return price;
-//		case 10:
-//			price = "8";
-//			return price;
-//		case 11:
-//			price = "4";
-//			return price;
-//		case 12:
-//			price = "50";
-//			return price;
-//		default:
-//			break;
-//		}
-//
-//		return price;
-//	}
+	public int getPrice(int x) {
+		switch (x) {
+		case 1:
+			amount = 5;
+			return amount;
+		case 2:
+			amount = 5;
+			return amount;
+		case 3:
+			amount = 7;
+			return amount;
+		case 4:
+			amount = 6;
+			return amount;
+		case 5:
+			amount = 5;
+			return amount;
+		case 6:
+			amount = 5;
+			return amount;
+		case 7:
+			amount = 6;
+			return amount;
+		case 8:
+			amount = 7;
+			return amount;
+		case 9:
+			amount = 7;
+			return amount;
+		case 10:
+			amount = 8;
+			return amount;
+		case 11:
+			amount = 4;
+			return amount;
+		case 12:
+			amount = 50;
+			return amount;
+		default:
+			break;
+		}
+
+		return amount;
+	}
 
 }

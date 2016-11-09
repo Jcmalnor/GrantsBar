@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class TakeOrder {
@@ -9,7 +10,7 @@ public class TakeOrder {
 	 */
 	Scanner sc = new Scanner(System.in);
 	Scanner stringscan = new Scanner(System.in);
-
+	double total = 0.0;
 	
 	public double getTax(double x) {
 		double tax = 1.06;
@@ -46,5 +47,6 @@ public class TakeOrder {
 		}
 		return x;
 	}
+	
 
 }
