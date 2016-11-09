@@ -3,17 +3,23 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.List;
+import java.util.Scanner;
+
 
 public class GrantsBarApp {
+
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner sc = new Scanner(System.in);
 		Scanner stringscan = new Scanner(System.in);
+
 		// introduction
 		System.out.println("Hello and welcome to Grant's Bar!\n");
 		
@@ -23,10 +29,14 @@ public class GrantsBarApp {
 		TakeOrder order = new TakeOrder();
 		double total = 0;
 		double total1 = 0;
+
 		String orderComplete = "n";
 		int orderNumber = 0;
 		int orderQuantity = 0;
-		
+
+	
+		String menu = "";
+
 		
 		Scanner scan = new Scanner(file);
 		while (scan.hasNextLine()) {
@@ -36,9 +46,6 @@ public class GrantsBarApp {
 			barArrayList.add(new Alcohol(menuItems[0], menuItems[1], menuItems[2], menuItems[3]));
 		
 		}
-		
-	
-		
 		
 	
 		
@@ -74,17 +81,26 @@ public class GrantsBarApp {
 		System.out.println("Your total after tax is $" + tax);
 		tip = order.getTip(tax);
 		System.out.println(tip);
+			
+			// call checkout
+			// payment method
+
+			/*
+			 * print receipt drink number price payment change
+			 */
 
 		// call checkout
 		// payment method
 
-		/*
-		 * print receipt drink number price payment change
-		 */
-
-		// New Order?
-		// if yes loop
-		// if no thanks for coming
-
+			// New Order?
+			// if yes loop
+			// if no thanks for coming
+		
+		
 	}
 }
+		
+		
+		
+		
+		
