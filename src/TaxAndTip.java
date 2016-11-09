@@ -1,7 +1,6 @@
-import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class TakeOrder {
+public class TaxAndTip {
 	/*
 	 * create method getTakeOrder create variable prompt user to input order and
 	 * quantity store user input (drink selection) prompt user for more menu
@@ -21,6 +20,7 @@ public class TakeOrder {
 	public double getTip(double x) {
 		System.out.print("What percent would you like to tip? (10,15,20,25,30) ");
 		int tip = sc.nextInt();
+		tip = BarValidator.getValidTip(tip);
 		switch (tip) {
 		case 10:
 			double tip1 = 1.1;

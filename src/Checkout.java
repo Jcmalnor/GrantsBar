@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Checkout {
@@ -28,8 +30,11 @@ public class Checkout {
 	public String getCash(double x) {		
 		System.out.println("Enter Tender");
 		cash = payMethod.nextInt();
-		amount = x-cash;
-		return "Your change is: " + amount;
+		amount = cash-x;
+		BigDecimal formattedAmount = new BigDecimal(amount);
+		formattedAmount = formattedAmount.setScale(2, RoundingMode.HALF_UP);
+		System.out.println("Your change is: $" + formattedAmount);
+		return "Thank You";
 	}
 	
 
