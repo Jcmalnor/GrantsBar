@@ -30,6 +30,10 @@ public class Checkout {
 	public String getCash(double x) {		
 		System.out.println("Enter Tender");
 		cash = payMethod.nextInt();
+		while (cash < x) {
+			System.out.print("Mo Money Fool! ");
+			cash = payMethod.nextDouble();
+		}
 		amount = cash-x;
 		BigDecimal formattedAmount = new BigDecimal(amount);
 		formattedAmount = formattedAmount.setScale(2, RoundingMode.HALF_UP);

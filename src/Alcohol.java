@@ -3,9 +3,9 @@ public class Alcohol {
 
 	private String drinkName = null;
 	private String price = null;
-	private int amount = 0;
 	private String category = null;
 	private String description = null;
+	private int amount = 0;
 	
 	public Alcohol(String drinkName, String price, String category, String description) {
 		this.drinkName = drinkName;

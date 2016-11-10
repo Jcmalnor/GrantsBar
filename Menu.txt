@@ -1,12 +1,12 @@
-1. Chirpus Ale, $5, Pale Ale, light body with a taste of bird
-2. Antonellager, $5, Lager,  tastes good
-3. Coder's Delight, $7, Stout, tastes good
-4. Coder's Dilemma, $6, IPA, tastes good
-5. Java Cream, $5, Cream Ale, tastes good 
-6. Grand Daddy Detroit, $5, Lager, tastes good
-7. Chirpus Sensation, $6, Gin, tastes good
-8. Coffee Brew, $7, Bailey's, tastes good
-9. Coder's Desire, $7, Tequila, tastes good
-10. Java on the Beach, $8, Kahlua, tastes good
-11. Commit Issues, $4, Rum, tastes good
-12. Whiskey Peter, $50, Whiskey, tastes good
+1. Chirpus Ale, $5, Pale Ale, light body with a taste of bird.
+2. Antonellager, $5, Lager,  Fly style with sass.
+3. Coder's Delight, $7, Stout, Swimming in the matrix.
+4. Coder's Dilemma, $6, IPA, Don't be sad, git glad.
+5. Java Cream, $5, Cream Ale, Creamy taste.
+6. Grand Daddy Detroit, $5, Lager, Puts hair on your test.
+7. Chirpus Sensation, $6, Gin, TRY IT IF YOU DARE.
+8. Coffee Brew, $7, Bailey's, Good Morning Grand Circus.
+9. Coder's Desire, $7, Tequila, Watch out for the floor.
+10. Java on the Beach, $8, Kahlua, Dreaming of a land far far away.
+11. Commit Issues, $4, Rum, Milliza?...
+12. Whiskey Peter, $50, Whiskey, Who is Peter?

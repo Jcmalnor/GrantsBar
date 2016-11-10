@@ -43,7 +43,7 @@ public class GrantsBarApp {
 		String ans = "y";
 		while (ans.equalsIgnoreCase("y")) {
 			for (Alcohol a : barArrayList) {
-				System.out.println(a.getDrinkName() + ", " + a.getCategory() + a.getPrice());
+				System.out.println(a.getDrinkName() + ", " + a.getCategory() + ", " + a.getPrice() + ", " + a.getDescription() + "\n");
 			}
 
 			String orderComplete = "n";
@@ -70,7 +70,7 @@ public class GrantsBarApp {
 				formattedTotal = formattedTotal.setScale(2, RoundingMode.HALF_UP);
 
 				// print subtotal and prompt for more/different drinks
-				System.out.println("Your total is: " + total);
+				System.out.println("Your sub total is: " + total);
 				System.out.print("Does that complete your order? (Y/N) ");
 				orderComplete = stringscan.nextLine();
 				orderComplete = BarValidator.getYN(orderComplete);
@@ -97,10 +97,10 @@ public class GrantsBarApp {
 			System.out.println("Your grand total is: $" + formattedTotal);
 
 			// checkout with specific payment method
-			System.out.println("How would you like to pay? ");
 			System.out.println("1. Credit Card");
 			System.out.println("2. Cash");
 			System.out.println("3. Check");
+			System.out.print("How would you like to pay? ");
 			int payMethod = sc.nextInt();
 			
 			Checkout $ = new Checkout();
@@ -120,7 +120,7 @@ public class GrantsBarApp {
 				sum += m;
 			}
 			System.out.println("You ordered: " + sum + " drinks.");
-			System.out.println("Enjoy your: ");
+			System.out.println("You ordered: ");
 			for (String m: drinkList) {
 				System.out.println(m);
 			}
@@ -134,8 +134,6 @@ public class GrantsBarApp {
 			if (ans.equalsIgnoreCase("n")) {
 				System.out.println("DEUCES");
 			}
-			sc.close();
-			stringscan.close();
 		}
 	}
 }
